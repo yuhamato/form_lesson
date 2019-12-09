@@ -207,9 +207,8 @@
   position: relative;
 }
 
-.select-area::after{
+.select-area::after{  /*リストの三角を新しく作る*/
   content: '';
-  display: inline-block;
   height: 5px;
   width: 5px;
   border-right: 2px solid #d9d9d9;
@@ -221,7 +220,7 @@
 }
 
 .origin{
-  -webkit-appearance: none;
+  -webkit-appearance: none; /*リストの右端の元のデザインの三角の装飾のOFF*/
   color: #545658;
 }
 
@@ -298,6 +297,14 @@
 
 .link-color{
   color: #01a6a4;
+}
+
+.link-color:hover{
+  color: #01bfbd;
+}
+
+.link-line:hover{
+  text-decoration-line: underline;
 }
 
 .footer{
